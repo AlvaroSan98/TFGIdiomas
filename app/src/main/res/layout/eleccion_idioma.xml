@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <view class="androidx.recyclerview.widget.RecyclerView"
+        android:id="@+id/recycler_idiomas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </view>
+
+    <ImageButton
+        android:id="@+id/btn_add_idioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_add_btn"
+        android:layout_marginTop="20dp"
+        android:onClick="addIdioma"/>
+
+    <EditText
+        android:id="@+id/et_nuevo_idioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/idioma"
+        android:textAlignment="center"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/btn_aceptar_idioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_ok_btn"
+        android:visibility="invisible"
+        android:onClick="aceptarIdioma"/>
+
+</LinearLayout>

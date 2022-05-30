@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_palabras_acertadas_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <TextView
+        android:id="@+id/tv_puntos_test_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_palabras_test_final"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="aCasa"
+        android:text="Aceptar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_puntos_test_total"
+        app:layout_constraintStart_toStartOf="@+id/tv_puntos_test_total"
+        app:layout_constraintTop_toBottomOf="@+id/tv_puntos_test_total"
+        app:layout_constraintVertical_bias="0.48000002" />
+
+    <TextView
+        android:id="@+id/tv_puntos_test_acertados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_puntos_test_base"
+        app:layout_constraintStart_toStartOf="@+id/tv_puntos_test_base"
+        app:layout_constraintTop_toBottomOf="@+id/tv_puntos_test_base"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <TextView
+        android:id="@+id/tv_puntos_test_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_vidas_sobrantes"
+        app:layout_constraintStart_toStartOf="@+id/tv_vidas_sobrantes"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vidas_sobrantes"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_palabras_test_final"
+        android:layout_width="0dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_palabras_acertadas_test"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_vidas_sobrantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_puntos_test_acertados"
+        app:layout_constraintStart_toStartOf="@+id/tv_puntos_test_acertados"
+        app:layout_constraintTop_toBottomOf="@+id/tv_puntos_test_acertados"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <TextView
+        android:id="@+id/tv_fin_intruso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buen_intento"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_puntos_test_base"
+        app:layout_constraintEnd_toEndOf="@+id/rv_palabras_test_final"
+        app:layout_constraintStart_toStartOf="@+id/rv_palabras_test_final"
+        app:layout_constraintTop_toBottomOf="@+id/tv_palabras_acertadas_test" />
+</androidx.constraintlayout.widget.ConstraintLayout>

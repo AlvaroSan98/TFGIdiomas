@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/opcion1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Button"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/opcion3"
+        app:layout_constraintStart_toStartOf="@+id/opcion3"
+        app:layout_constraintTop_toBottomOf="@+id/opcion3"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/opcion2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Button"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/opcion1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/opcion1"
+        app:layout_constraintTop_toBottomOf="@+id/opcion1"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/opcion3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Button"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/opcion4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/opcion4"
+        app:layout_constraintTop_toBottomOf="@+id/opcion4"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/opcion4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Button"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/palabraPregunta"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/tv_que_significa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/que_significa"
+        android:textSize="42sp"
+        android:textColor="@color/color_on_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <TextView
+        android:id="@+id/palabraPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Hello"
+        android:textColor="@color/color_on_background"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_que_significa"
+        app:layout_constraintStart_toStartOf="@+id/tv_que_significa"
+        app:layout_constraintTop_toBottomOf="@+id/tv_que_significa" />
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/opcion2"
+        app:layout_constraintStart_toStartOf="@+id/opcion2"
+        app:layout_constraintTop_toBottomOf="@+id/opcion2"
+        app:srcCompat="@drawable/ic_check"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/check"
+        app:layout_constraintEnd_toEndOf="@+id/check"
+        app:layout_constraintStart_toStartOf="@+id/check"
+        app:layout_constraintTop_toTopOf="@+id/check"
+        app:srcCompat="@drawable/ic_remove"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/contador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/palabraPregunta"
+        app:layout_constraintStart_toStartOf="@+id/palabraPregunta"
+        app:layout_constraintTop_toBottomOf="@+id/palabraPregunta" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tv_que_significa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart_icon" />
+
+    <TextView
+        android:id="@+id/vidas_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_on_background"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
