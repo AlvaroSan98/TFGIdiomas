@@ -9,27 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyTheme.DayNight">
-        <activity android:name=".MainActivity">
+        
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ElegirIdioma"></activity>
-        <activity android:name=".PantallaPrincipal"></activity>
-        <activity android:name=".Registro"></activity>
-        <activity android:name=".AddPalabra"></activity>
-        <activity android:name=".ColeccionesActivity"></activity>
-        <activity android:name=".InsideColeccion"></activity>
-        <activity android:name=".PracticaConf2"></activity>
-        <activity android:name=".PracticaConf3"></activity>
-        <activity android:name=".test.JuegoTest"></activity>
-        <activity android:name=".test.TestFinal"></activity>
-        <activity android:name=".desordenado.JuegoDesordenado"></activity>
-        <activity android:name=".desordenado.DesordenadoFinal"></activity>
-        <activity android:name=".PerfilActivity"></activity>
-        <activity android:name=".Wordle"></activity>
+        <activity android:name=".ElegirIdioma" android:screenOrientation="portrait"></activity>
+        <activity android:name=".PantallaPrincipal" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Registro" android:screenOrientation="portrait"></activity>
+        <activity android:name=".AddPalabra" android:screenOrientation="portrait"></activity>
+        <activity android:name=".ColeccionesActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".InsideColeccion" android:screenOrientation="portrait"></activity>
+        <activity android:name=".PracticaConf2" android:screenOrientation="portrait"></activity>
+        <activity android:name=".PracticaConf3" android:screenOrientation="portrait"></activity>
+        <activity android:name=".test.JuegoTest" android:screenOrientation="portrait"></activity>
+        <activity android:name=".test.TestFinal" android:screenOrientation="portrait"></activity>
+        <activity android:name=".desordenado.JuegoDesordenado" android:screenOrientation="portrait"></activity>
+        <activity android:name=".desordenado.DesordenadoFinal" android:screenOrientation="portrait"></activity>
+        <activity android:name=".PerfilActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Wordle" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
